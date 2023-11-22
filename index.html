@@ -53,35 +53,20 @@
         </div>
     </section>
 
-    <section class="contact">
-            <div class="text-left"> <!-- Align text to the left -->
-                <h2 class="text-4xl font-bold">Contact Me</h2>
-                <p class="mt-4 text-xl">Feel free to reach out to me through the following channels:</p>
-                <ul class=" pl-8 mt-6 space-y-4 text-xl ">
-                    <li class="flex flex-col ">
-                        <p>Email: </p>
-                        <a href="mailto:lycorisbanquet@gmail.com" class="flex flex-row">
-                            <p>lycorisbanquet@gmail.com</p> 
-                            <i class="fas fa-external-link-alt text-sm ml-2 "></i>
-                        </a>
-                    </li>
-                    <li class="flex flex-col ">
-                        <p>LinkedIn:</p>
-                        <a href="https://www.linkedin.com/in/syahmi-adlan-627442209/" class="flex flex-row">
-                            <p>My LinkedIn Profile</p> 
-                            <i class="fas fa-external-link-alt text-sm ml-2 "></i>
-                        </a>
-                    </li>
-                    <li class="flex flex-col  ">
-                        <p>GitHub:</p>
-                        <a href="https://github.com/yuuki85/" class="flex flex-row ">
-                            <p>My GitHub Profile</p>
-                            <i class="fas fa-external-link-alt text-sm ml-2 "></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
