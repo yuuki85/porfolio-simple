@@ -1,88 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Add the above link to include Tailwind CSS -->
     <title>Your Portfolio</title>
 </head>
-<body>
 
-    <header>
-        <div class="container">
-            <h1>Syahmi Nor Adlan Bin Selamat</h1>
-            <p>5th Semester Bachelor of Information Technology (Hons.) in Software Engineering (BSE) , Universiti Kuala Lumpur MIIT</p>
+<body class="font-sans">
+
+    <header class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">Syahmi Nor Adlan Bin Selamat</h1>
+            <p class="text-lg">5th Semester Bachelor of Information Technology (Hons.) in Software Engineering (BSE), Universiti Kuala Lumpur MIIT</p>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-             <h2 class="text-4xl font-bold">Hi, I’m Syahmi Adlan</h2>
-                    <p class="mt-4 text-xl">
-                        I'm a Software Engineering student.<br> I'm all about learning, coding, and making things work. 
-                    </p>
-                    <p class="mt-12 text-xl">
-                        It's nice to see you here.
-                    </p>
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Hi, I’m Syahmi Adlan</h2>
+            <p class="text-xl">I'm a Software Engineering student.<br> I'm all about learning, coding, and making things work.</p>
+            <p class="mt-12 text-xl">It's nice to see you here.</p>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-           <div class="project">
-                <a href="https://www.figma.com/proto/xa3nbrnXhZrMb2uzwvdRun/Split?type=design&node-id=2-3&t=ban5y3EcmHTHAUa6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3">
-                    <h3>Freelance Project: UI/UX Design Split Mobile App</h3>
+    <section id="projects" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="project mb-8">
+                <a href="https://www.figma.com/proto/xa3nbrnXhZrMb2uzwvdRun/Split?type=design&node-id=2-3&t=ban5y3EcmHTHAUa6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3" class="text-blue-500 hover:underline">
+                    <h3 class="text-xl font-bold">Freelance Project: UI/UX Design Split Mobile App</h3>
                 </a>
-                <ul>
+                <ul class="ml-4">
                     <li>Engaged in discussions with the client to gather project requirements.</li>
                     <li>Utilized Figma to design the mobile application.</li>
                     <li>Presented the design to the client and gathered valuable feedback from the customer.</li>
                 </ul>
             </div>
-           <div class="project">
-                <a href="https://www.figma.com/proto/xa3nbrnXhZrMb2uzwvdRun/Split?type=design&node-id=2-3&t=ban5y3EcmHTHAUa6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3">
-                    <h3>Freelance Project: UI/UX Design Split Mobile App</h3>
-                </a>
-                <ul>
-                    <li>Engaged in discussions with the client to gather project requirements.</li>
-                    <li>Utilized Figma to design the mobile application.</li>
-                    <li>Presented the design to the client and gathered valuable feedback from the customer.</li>
-                </ul>
-            </div>
+            <!-- Add more projects if needed -->
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-           <p class="mt-4 text-xl">Feel free to reach out to me through the following channels:</p>
-                <ul class=" pl-8 mt-6 space-y-4 text-xl ">
-                    <li class="flex flex-col ">
-                        <p>Email: </p>
-                        <a href="mailto:lycorisbanquet@gmail.com" class="flex flex-row">
-                            <p>lycorisbanquet@gmail.com</p> 
-                            <i class="fas fa-external-link-alt text-sm ml-2 "></i>
-                        </a>
-                    </li>
-                    <li class="flex flex-col ">
-                        <p>LinkedIn:</p>
-                        <a href="https://www.linkedin.com/in/syahmi-adlan-627442209/" class="flex flex-row">
-                            <p>My LinkedIn Profile</p> 
-                            <i class="fas fa-external-link-alt text-sm ml-2 "></i>
-                        </a>
-                    </li>
-                    <li class="flex flex-col  ">
-                        <p>GitHub:</p>
-                        <a href="https://github.com/yuuki85/" class="flex flex-row ">
-                            <p>My GitHub Profile</p>
-                            <i class="fas fa-external-link-alt text-sm ml-2 "></i>
-                        </a>
-                    </li>
-                </ul>
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <p class="text-xl mb-6">Feel free to reach out to me through the following channels:</p>
+            <ul class="pl-8 space-y-4 text-xl">
+                <li class="flex flex-col">
+                    <p>Email: </p>
+                    <a href="mailto:lycorisbanquet@gmail.com" class="flex items-center hover:underline">
+                        <p class="mr-2">lycorisbanquet@gmail.com</p>
+                        <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                </li>
+                <li class="flex flex-col">
+                    <p>LinkedIn:</p>
+                    <a href="https://www.linkedin.com/in/syahmi-adlan-627442209/" class="flex items-center hover:underline">
+                        <p class="mr-2">My LinkedIn Profile</p>
+                        <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                </li>
+                <li class="flex flex-col">
+                    <p>GitHub:</p>
+                    <a href="https://github.com/yuuki85/" class="flex items-center hover:underline">
+                        <p class="mr-2">My GitHub Profile</p>
+                        <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
